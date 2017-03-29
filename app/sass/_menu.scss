@@ -1,0 +1,35 @@
+.menu {
+  position: absolute;
+  top: 53px;
+  left: 293px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__item {
+    margin-right: 28px;
+    color: #fff;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+
+    &_actve{
+
+    }
+
+    &:hover{
+      color: #49bf6b;
+    }
+
+    &_live{
+      margin-left: 50px;
+      color: #56e27f;
+
+      &:hover{
+        color: #ff001c;
+      }
+
+    }
+
+  }
+
+}
