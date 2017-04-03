@@ -1,0 +1,46 @@
+.completed-list {
+  margin-bottom: 47px;
+  padding: 18px 10px;
+  background-color: #f8f9fd;
+
+  li{
+    margin-bottom: 17px;
+    padding-left: 6px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e6e8f2;
+    color: #8a8b93;
+    font-size: 15px;
+    text-align: center;
+
+    &:last-child{
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+  }
+
+  &__members{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 126px;
+    margin: 0 auto 14px;
+    color: #323339;
+    font-size: 16px;
+
+    span{
+      width: 40px;
+    }
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  &__content{
+    margin-bottom: 13px;
+  }
+
+}

@@ -18,9 +18,9 @@ var paths = {
     vendorStyles: 'app/css/*.css',
     scripts: [
         {
-            dist: 'index.min.js',
+            dist: 'main.min.js',
             contains: [
-                'app/js/jquery.index.js'
+                'app/js/jquery.websters-select.js'
             ]
         }
     ],

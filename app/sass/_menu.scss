@@ -1,10 +1,5 @@
 .menu {
   position: absolute;
-  top: 53px;
-  left: 293px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
 
   &__item {
     margin-right: 28px;
@@ -26,6 +21,32 @@
 
       &:hover{
         color: #ff001c;
+      }
+
+    }
+
+  }
+
+  &_header{
+    top: 53px;
+    left: 293px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &_footer{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    font-size: 15px;
+
+    .menu__item{
+      margin-right: 19px;
+      color: #323339;
+
+      &:hover{
+        text-decoration: underline;
       }
 
     }

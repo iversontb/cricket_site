@@ -1,0 +1,63 @@
+.fixtures {
+  margin-bottom: 45px;
+  border-top: 1px solid #e6e8f2;
+
+  &__topic{
+    height: 40px;
+    margin-top: 27px;
+    padding: 10px 26px 0;
+    background-color: #323339;
+    color: #56e27f;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__item{
+    position: relative;
+    padding: 33px 0 39px;
+    border-bottom: 1px solid #e6e8f2;
+    font-size: 18px;
+    line-height: 22px;
+
+    & + .fixtures__topic{
+      margin-top: 0;
+    }
+
+  }
+
+  &__info{
+    margin-bottom: 9px;
+    color: #8a8b93;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__members{
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 498px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+
+    span{
+      margin: 0 16px;
+    }
+
+    strong{
+      font-size: 28px;
+    }
+
+    img{
+      position: relative;
+      top: 4px;
+      width: 40px;
+      height: 27px;
+      margin-right: 7px;
+    }
+
+  }
+
+}

@@ -1,0 +1,28 @@
+.block-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 19px;
+  font-size: 38px;
+  font-weight: 700;
+
+  > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    margin-right: 14px;
+  }
+
+  &__select{
+    position: absolute;
+    top: 3px;
+    right: -1px;
+  }
+
+  &_1{
+    color: #43af62;
+  }
+
+}

@@ -145,10 +145,18 @@
                 _obj.find( 'option' ).each( function( i ){
                     var curItem = $( this );
 
-                    if( i == curIndex ){
-                        list.append( '<li class="active">' + curItem.text() + '</li>' );
+                    if ( curItem.data("flag") != undefined ){
+                        if( i == curIndex ){
+                            list.append( '<li class="active"><img src=" '+ curItem.data("flag") +' ">'+ curItem.text() + '</li>' );
+                        } else {
+                            list.append( '<li><img src=" '+ curItem.data("flag") +' ">' + curItem.text() + '</li>' );
+                        }
                     } else {
-                        list.append( '<li>' + curItem.text() + '</li>' );
+                        if( i == curIndex ){
+                            list.append( '<li class="active">'+ curItem.text() + '</li>' );
+                        } else {
+                            list.append( '<li>' + curItem.text() + '</li>' );
+                        }
                     }
 
                 } );
@@ -167,7 +175,11 @@
                 if( maxHeight > _popup.find( 'li' ).eq( 0 ).outerHeight() * _visible ){
                     _popup.height( _popup.find( 'li' ).eq( 0 ).outerHeight() * _visible );
                     _scroll = _popup.niceScroll( {
-                        horizrailenabled: false
+                        horizrailenabled: false,
+                        cursorwidth: "10px",
+                        cursorcolor: "#8a8b93",
+                        cursorborder: "1px solid #f8f9fc",
+                        background: "#f8f9fc"
                     } );
                 }
 

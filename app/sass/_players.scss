@@ -1,0 +1,43 @@
+.players {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 -12px 55px 0;
+
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 187px;
+    margin: 0 12px 12px 0;
+    padding: 8px 16px;
+    background-color: #f8f9fc;
+    color: #8a8b93;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__ava{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50px;
+    border: 2px solid #e7e9f3;
+    overflow: hidden;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  span{
+    width: calc( 100% - 76px );
+  }
+
+}
